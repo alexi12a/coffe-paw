@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar y Contacto - Coffee Paw</title>
+
+    <!-- Enlaces para la tipografía Sniglet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+    <!-- Enlace a la hoja de estilos CSS general -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / ENCABEZADO
+         ========================================== -->
+    <header class="site-header">
+        
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logotipo del sitio web -->
+                <a href="index.html" class="navbar-logo">coffe paw</a>
+                
+                <!-- Botón de menú hamburguesa para dispositivos móviles -->
+                <button class="navbar-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Menú principal con enlaces de navegación -->
+                <ul class="navbar-menu">
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="index.html#about"> Nosotros </a> </li>
+                    <li> <a href="index.html#services"> Cómo Ayudar </a> </li>
+                    <li> <a href="index.html#blog"> Centro de Apoyo </a> </li>
+                    <li> <a href="contacto.html" class="active"> Donar / Contacto </a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SECCIÓN HERO SECUNDARIA -->
+        <div class="hero-container" style="padding: 40px 20px;">
+            <div class="hero-content">
+                <h1 class="hero-title">Haz tu Donación o Contáctanos</h1>
+                <p class="hero-subtitle">Tu generosidad se traduce directamente en alimento, medicinas y un espacio seguro para perritos sin hogar.</p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN / CONTENIDO PRINCIPAL
+         ========================================== -->
+    <main class="main-content">
+
+        <!-- SECCIÓN DE OPCIONES DE DONACIÓN -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Formas de Aportar</h2>
+                <p class="section-description">ELIGE EL MÉTODO QUE MÁS SE ADAPTE A TI</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Tarjeta Datos Bancarios -->
+                <article class="card">
+                    <div class="card-icon">💳</div>
+                    <h3 class="card-title">Transferencia bancaria</h3>
+                    <p class="card-text"><strong>Banco:</strong> BBVA México</p>
+                    <p class="card-text"><strong>Cuenta CLABE:</strong> 012 320 00123456789 0</p>
+                    <p class="card-text"><strong>Beneficiario:</strong> Coffee Paw A.C.</p>
+                </article>
+
+                <!-- Tarjeta Materiales e Insumos -->
+                <article class="card">
+                    <div class="card-icon">📦</div>
+                    <h3 class="card-title">Donativos en Especie</h3>
+                    <p class="card-text">Aceptamos alimento en bulto (cachorro/adulto), desparasitantes, cobijas, material de curación y productos de limpieza.</p>
+                </article>
+
+                <!-- Tarjeta Redes / Contacto Directo -->
+                <article class="card">
+                    <div class="card-icon">📲</div>
+                    <h3 class="card-title">Contacto Rápido</h3>
+                    <p class="card-text">Escríbenos directamente por WhatsApp o Instagram para coordinar entregas o dudas sobre apadrinamiento.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FORMULARIO DE CONTACTO Y REGISTRO DE DONACIÓN -->
+        <section id="formulario-donacion" class="content-section about-section">
+            <div class="about-container">
+                <div class="about-text" style="width: 100%; max-width: 700px; margin: 0 auto;">
+                    <h2 class="section-title">Formulario de Apoyo</h2>
+                    <p style="text-align: center; margin-bottom: 25px;">Llena este formulario para coordinar la entrega de tus donativos o solicitar información para ser hogar temporal.</p>
+
+                    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
+                        <div>
+                            <label for="nombre" style="font-weight: bold; display: block; margin-bottom: 5px;">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                        </div>
+
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 250px;">
+                                <label for="email" style="font-weight: bold; display: block; margin-bottom: 5px;">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                            </div>
+                            <div style="flex: 1; min-width: 250px;">
+                                <label for="telefono" style="font-weight: bold; display: block; margin-bottom: 5px;">Teléfono / WhatsApp:</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+52 444 000 0000" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="tipo_apoyo" style="font-weight: bold; display: block; margin-bottom: 5px;">¿Cómo deseas apoyar?</label>
+                            <select id="tipo_apoyo" name="tipo_apoyo" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                                <option value="monetario">Donación económica / Monstruo de Apoyo</option>
+                                <option value="especie">Donación en especie (alimento, Cobijas, etc.)</option>
+                                <option value="hogar_temporal">Quiero ser Hogar Temporal</option>
+                                <option value="voluntariado">Voluntariado en eventos / acopio</option>
+                                <option value="otro">Otro / Consulta general</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje" style="font-weight: bold; display: block; margin-bottom: 5px;">Mensaje o detalle de tu donativo:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los detalles del alimento/insumos a entregar o tu mensaje..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;"></textarea>
+                        </div>
+
+                        <button type="submit" class="hero-btn" style="border: none; cursor: pointer; margin-top: 10px; align-self: center;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER / PIE DE PÁGINA
+         ========================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-brand">coffe paw</h4>
+                <p class="footer-desc">Sumando esfuerzos para transformar vidas y erradicar el maltrato y abandono animal en nuestras calles.</p>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="footer-heading">Enlaces Rápidos</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Nosotros</a></li>
+                    <li><a href="index.html#services">Cómo Ayudar</a></li>
+                    <li><a href="contacto.html">Donar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="footer-heading">Contacto y Donaciones</h5>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/popular/dr-villela-veterinario/" target="_blank">Instagram</a></li>
+                </ul>
+                <p>Email: donaciones@coffeepaw.org</p>
+                <p>Teléfono: +52 (444) 123-4567</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coffee Paw. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de control del menú móvil -->
+    <script src="script.js"></script>
+</body>
+</html>

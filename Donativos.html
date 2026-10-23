@@ -88,53 +88,39 @@
                 <article class="card">
                     <div class="card-icon">📲</div>
                     <h3 class="card-title">Contacto Rápido</h3>
-                    <p class="card-text">Escríbenos directamente por WhatsApp o Instagram para coordinar entregas o dudas sobre apadrinamiento.</p>
+                    <p class="card-text">Escríbenos directamente por Instagram o correo electrónico para coordinar entregas o dudas sobre apadrinamiento.</p>
                 </article>
             </div>
         </section>
 
-        <!-- SECCIÓN FORMULARIO DE CONTACTO Y REGISTRO DE DONACIÓN -->
-        <section id="formulario-donacion" class="content-section about-section">
+        <!-- SECCIÓN DE CONTACTO (REEMPLAZO DEL FORMULARIO) -->
+        <section id="contacto-directo" class="content-section about-section">
             <div class="about-container">
-                <div class="about-text" style="width: 100%; max-width: 700px; margin: 0 auto;">
-                    <h2 class="section-title">Formulario de Apoyo</h2>
-                    <p style="text-align: center; margin-bottom: 25px;">Llena este formulario para coordinar la entrega de tus donativos o solicitar información para ser hogar temporal.</p>
+                <div class="about-text" style="width: 100%; max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 class="section-title">Lugar de Contacto</h2>
+                    <p style="margin-bottom: 30px;">Si deseas comunicarte con nosotros, coordinar entregas o resolver cualquier duda, puedes encontrarnos en nuestros canales oficiales:</p>
 
-                    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
-                        <div>
-                            <label for="nombre" style="font-weight: bold; display: block; margin-bottom: 5px;">Nombre Completo:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                    <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+                        <!-- Opción 1: Correo Electrónico -->
+                        <div style="background: #ffffff; padding: 20px 30px; border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                            <span style="font-size: 1.8rem;">✉️</span>
+                            <h3 style="margin: 10px 0 5px 0;">Correo Electrónico</h3>
+                            <p style="margin-bottom: 15px; font-size: 0.95rem; color: #555;">Escríbenos directamente para dudas o apoyo:</p>
+                            <a href="mailto:donaciones@coffeepaw.org" class="hero-btn" style="text-decoration: none; display: inline-block; padding: 10px 20px;">
+                                Enviar Correo
+                            </a>
                         </div>
 
-                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                            <div style="flex: 1; min-width: 250px;">
-                                <label for="email" style="font-weight: bold; display: block; margin-bottom: 5px;">Correo Electrónico:</label>
-                                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
-                            </div>
-                            <div style="flex: 1; min-width: 250px;">
-                                <label for="telefono" style="font-weight: bold; display: block; margin-bottom: 5px;">Teléfono / WhatsApp:</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="+52 444 000 0000" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
-                            </div>
+                        <!-- Opción 2: Instagram Directo -->
+                        <div style="background: #ffffff; padding: 20px 30px; border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                            <span style="font-size: 1.8rem;">📸</span>
+                            <h3 style="margin: 10px 0 5px 0;">Síguenos en Instagram</h3>
+                            <p style="margin-bottom: 15px; font-size: 0.95rem; color: #555;">Visita nuestro perfil oficial para estar al tanto de nuestros rescates:</p>
+                            <a href="https://www.instagram.com/alexaa_gflores/" target="_blank" rel="noopener noreferrer" class="hero-btn" style="text-decoration: none; display: inline-block; padding: 10px 20px;">
+                                Ver @alexaa_gflores en Instagram
+                            </a>
                         </div>
-
-                        <div>
-                            <label for="tipo_apoyo" style="font-weight: bold; display: block; margin-bottom: 5px;">¿Cómo deseas apoyar?</label>
-                            <select id="tipo_apoyo" name="tipo_apoyo" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
-                                <option value="monetario">Donación económica / Monstruo de Apoyo</option>
-                                <option value="especie">Donación en especie (alimento, Cobijas, etc.)</option>
-                                <option value="hogar_temporal">Quiero ser Hogar Temporal</option>
-                                <option value="voluntariado">Voluntariado en eventos / acopio</option>
-                                <option value="otro">Otro / Consulta general</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="mensaje" style="font-weight: bold; display: block; margin-bottom: 5px;">Mensaje o detalle de tu donativo:</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los detalles del alimento/insumos a entregar o tu mensaje..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;"></textarea>
-                        </div>
-
-                        <button type="submit" class="hero-btn" style="border: none; cursor: pointer; margin-top: 10px; align-self: center;">Enviar Mensaje</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -165,9 +151,9 @@
             <div class="footer-col">
                 <h5 class="footer-heading">Contacto y Donaciones</h5>
                 <ul class="footer-links">
-                    <li><a href="https://www.instagram.com/popular/dr-villela-veterinario/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/alexaa_gflores/" target="_blank" rel="noopener noreferrer">Instagram (@alexaa_gflores)</a></li>
                 </ul>
-                <p>Email: donaciones@coffeepaw.org</p>
+                <p>Email: <a href="mailto:donaciones@coffeepaw.org" style="color: inherit; text-decoration: underline;">donaciones@coffeepaw.org</a></p>
                 <p>Teléfono: +52 (444) 123-4567</p>
             </div>
         </div>
